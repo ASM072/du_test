@@ -1,5 +1,4 @@
 import './App.css';
-import PlanCard from './PlanCard';
 import SourcePlanCard from './SourcePlanCard';
 
 function App() {

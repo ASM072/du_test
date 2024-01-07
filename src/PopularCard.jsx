@@ -1,10 +1,10 @@
 import React from "react";
 import classes from "./SourcePlanCard.module.scss";
-import { CustomButton } from "./PlanCardCSS";
+import  {CustomButton}  from "./CustomButton.js";
 
 const PopularCard = () => {
   return (
-    <>
+    
       <div className={classes.container}>
         <div className={classes.most_popular}>Most popular</div>
         <div className={classes.initial_detail}>
@@ -53,7 +53,7 @@ const PopularCard = () => {
           <CustomButton text="Select" />
         </div>
       </div>
-    </>
+    
   );
 };
 
