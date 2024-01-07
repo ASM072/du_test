@@ -1,16 +1,6 @@
-// color1 = #fc00ff
-// color2 = #00dbde
 import React from "react";
 import styled, { css } from "styled-components";
-
-// const gradient = degs => css`
-    
-//     // background: linear-gradient(
-//     //     ${ degs || 130 }deg,
-//     //     #fc00ff 100%,
-//     //     #00dbd3 0%
-//     // );
-// `;
+import classes from './SourcePlanCard.module.scss'
 
 export const Card = styled.div`
     position: absolute;
@@ -63,11 +53,22 @@ export const ForthDetail = styled.div`
     font-size: 1.25rem;
     border-bottom: 1px solid #bbb;
 `
-export const SelectButton = styled.div`
+export const SelectButton = styled.button`
     align-items: flex-end;
     height: 40px;
     padding: 0 2rem;
     border: 0;
     border-radius: 10px;
     background: white;
+    color: #00dbde
 `
+
+export const CustomButton = ({ text }) => {
+    return (
+        <>
+            <div className={classes.btn}>
+                {text}
+            </div>
+        </>
+    )
+}
